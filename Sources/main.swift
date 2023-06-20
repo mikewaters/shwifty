@@ -42,9 +42,9 @@ catch {
 
 func getKeyFromBinary(bookmark: Data, keyName: String) -> String {
     let bookmarkObj: NSDictionary = NSURL.resourceValues(forKeys: [URLResourceKey(rawValue: keyName)], fromBookmarkData: bookmark)! as NSDictionary
-    //let bookmarkPath: NSDictionary = bookmarkObj ?? [:]
     return bookmarkObj[keyName] as! String
 }
+
 func getKeysFromBinary(bookmark: Data) -> NSDictionary {
     let bookmarkPath: NSDictionary = funkydonkey(keyName: URLBookmarkKeys.all.rawValue, blobOfShit: bookmark) ?? [:]
     return bookmarkPath[URLBookmarkKeys.all.rawValue] as! NSDictionary
@@ -55,6 +55,9 @@ func funkydonkey(keyName: String, blobOfShit: Data) -> NSDictionary? {
     return bookmarkObj
 }
 
+/** 
+Old code be here
+**/
 func readLocalBinaryFile(file: String = "app.bin") {
 
     let fileURL = URL(fileURLWithPath: FileManager.default.currentDirectoryPath).appendingPathComponent(file)
