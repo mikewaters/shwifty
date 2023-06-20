@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug shwifty",
+            "program": "${workspaceFolder:shwifty}/.build/debug/shwifty",
+            "args": [],
+            "cwd": "${workspaceFolder:shwifty}",
+            "preLaunchTask": "swift: Build Debug shwifty"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release shwifty",
+            "program": "${workspaceFolder:shwifty}/.build/release/shwifty",
+            "args": [],
+            "cwd": "${workspaceFolder:shwifty}",
+            "preLaunchTask": "swift: Build Release shwifty"
+        }
+    ]
+}
