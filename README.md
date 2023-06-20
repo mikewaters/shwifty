@@ -33,3 +33,13 @@ You cant, but you *can* get a bunch of info from just looking at the launchpad d
 This guy - whoever he/she is, is brilliant and I could not have done it without their almost ten years of blogs:
 https://eclecticlight.co/2020/07/28/universal-binaries-inside-fat-headers/
 
+## Example output
+```
+title|path
+Jump Desktop Connect|/Applications/Jump Desktop Connect.app
+Siri|/System/Applications/Siri.app
+Tamper Chrome (application)|/Users/yourmother/Applications/Chrome Apps.localized/Tamper Chrome (application).app
+Sid Meier's Civilization VI|/Users/mike/Applications/Sid Meier's Civilization VI.app
+Music|/System/Applications/Music.app
+Visual Studio Code|/Applications/Visual Studio Code.app
+```
